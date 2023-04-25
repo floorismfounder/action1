@@ -1,0 +1,10 @@
+name: Call Action2
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Call Action2
+      uses: floorismfounder/action2@main
