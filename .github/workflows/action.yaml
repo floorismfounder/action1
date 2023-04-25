@@ -6,5 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout Action2
+      uses: actions/checkout@v2
+      with:
+        repository: floorismfounder/action2
+        ref: main
     - name: Call Action2
       uses: floorismfounder/action2@main
